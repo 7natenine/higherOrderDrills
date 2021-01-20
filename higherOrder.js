@@ -38,7 +38,7 @@ const myNames = ['Rich', 'Joe', 'Bhaumik', 'Ray'];
 //   return name[0] === 'R';
 // });
 
-console.log(filter(myNames, function(name) { return name [0] === 'R'}));
 // console.log(filteredNames) // => ['Rich', 'Ray']
 // <---- DO NOT EDIT BETWEEN THESE LINES
+// console.log(filter(myNames, function(name) { return name [0] === 'R'}));
 
