@@ -79,3 +79,16 @@ let index = 0;
 // moveCount.forEach( (x, index)  => console.log((x>1 || x==0)?`Movement #${index++}: ${x} steps`: `Movement #${index++}: ${x} step`))
 
 
+let test = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'
+let testArray = test.split(' ')
+let initialValue = ''
+let finalValue = testArray.reduce(function(accumulator, currentValue){
+  if (currentValue.length === 3){
+    return accumulator + ' '
+  }
+  else 
+    return accumulator + currentValue[currentValue.length-1].toUpperCase()
+
+}, initialValue)
+
+console.log(finalValue)
