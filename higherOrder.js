@@ -66,3 +66,19 @@ const snowWarning = hazardWarningCreator('Snow on the Road');
 // snowWarning('A St and 3rd Ave');
 // snowWarning('H St and 6th Ave');
 
+let turtleMove = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2], [0, 1]];
+
+let turtleBack = turtleMove.filter( (n => n[0] >= 0 && n[1] >= 0) )
+
+// console.log(turtleBack);
+
+let moveCount = turtleBack.map( x => x[0] + x[1])
+
+let index = 0;
+
+moveCount.forEach( (x, index)  => console.log((x>1 || x==0)?`Movement #${index++}: ${x} steps`: `Movement #${index++}: ${x} step`))
+
+
+// let statement = moveCount.forEach( (x, index)  => console.log(x) (index == 0||index >= 1) ? `Movement #${x}: ${index} steps`: 
+//                                                                               `Movement #${x}: ${index} step`, index++)
+
