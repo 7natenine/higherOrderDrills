@@ -76,9 +76,6 @@ let moveCount = turtleBack.map( x => x[0] + x[1])
 
 let index = 0;
 
-moveCount.forEach( (x, index)  => console.log((x>1 || x==0)?`Movement #${index++}: ${x} steps`: `Movement #${index++}: ${x} step`))
+// moveCount.forEach( (x, index)  => console.log((x>1 || x==0)?`Movement #${index++}: ${x} steps`: `Movement #${index++}: ${x} step`))
 
-
-// let statement = moveCount.forEach( (x, index)  => console.log(x) (index == 0||index >= 1) ? `Movement #${x}: ${index} steps`: 
-//                                                                               `Movement #${x}: ${index} step`, index++)
 
